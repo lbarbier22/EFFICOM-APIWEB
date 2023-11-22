@@ -12,14 +12,22 @@ import javax.persistence.Id;
 @Entity
 @Getter
 @Setter
-public class Chips {
+public class Note {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String id;
 
-    private String nom;
+    private int reproductionGout;
 
-    private String marque;
+    private int originalite;
+
+    private int addictivite;
+
+    private int ressenti;
+
+    private int bonus;
+
+    private int note;
 
 }
