@@ -1,0 +1,12 @@
+spring:
+  devtools:
+    add-properties: false
+  datasource:
+    url:
+    username:
+    password:
+  jpa:
+  generate-ddl: true
+  hibernate.ddl-auto: create-drop
+server:
+  port: 8022
