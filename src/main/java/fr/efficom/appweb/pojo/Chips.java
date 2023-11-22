@@ -12,10 +12,11 @@ import javax.persistence.Id;
 @Entity
 @Getter
 @Setter
-public class Table {
+public class Chips {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String id;
     private String nom;
+    private String gout;
 }
