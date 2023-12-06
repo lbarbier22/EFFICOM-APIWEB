@@ -6,6 +6,8 @@ import fr.efficom.appweb.service.ServiceService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class ServiceServiceImpl implements ServiceService {
 
@@ -13,11 +15,13 @@ public class ServiceServiceImpl implements ServiceService {
     private ChipsRepository chipsRepository;
 
     @Override
-    public Chips getChipsByID(String id) {
+    public Chips getChipsByID(Long id) {
         return chipsRepository.findById(id).orElse(null);
     }
 
-    public void saveChips(Chips chips){
-        chipsRepository.save(chips);
+    @Override
+    public List<Chips> findAll(){
+        return chipsRepository.findAll();
     }
+
 }
