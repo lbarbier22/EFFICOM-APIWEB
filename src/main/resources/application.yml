@@ -1,14 +1,9 @@
 spring:
-  devtools:
-    add-properties: false
   datasource:
-    url: jdbc:mariadb://mysql-superchips.alwaysdata.net/superchips_catalogue
-    username: 336651
-    password: DVy#v2a7LnK67XC
+    url: jdbc:mariadb://mysql-catachips.alwaysdata.net/catachips_catachips
+    username: catachips_root
+    password: 2idx6P5W
+    driver-class-name: org.mariadb.jdbc.Driver
   jpa:
-    database: mysql
-    generate-ddl: true
-    hibernate.ddl-auto: create-drop
-
-server:
-  port: 8022
+    hibernate:
+      ddl-auto: create-drop
