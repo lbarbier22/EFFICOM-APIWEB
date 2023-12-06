@@ -9,5 +9,6 @@ spring:
     database: mysql
   generate-ddl: true
   hibernate.ddl-auto: create-drop
+
 server:
   port: 8022

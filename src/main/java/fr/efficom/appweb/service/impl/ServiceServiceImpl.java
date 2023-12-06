@@ -14,14 +14,9 @@ public class ServiceServiceImpl implements ServiceService {
     @Autowired
     private ChipsRepository chipsRepository;
 
-    @Override
-    public Chips getChipsByID(Long id) {
-        return chipsRepository.findById(id).orElse(null);
-    }
 
     @Override
-    public List<Chips> findAll(){
+    public List<Chips> findAll() {
         return chipsRepository.findAll();
     }
-
 }
