@@ -13,8 +13,11 @@ import java.util.List;
 @RequestMapping("/api")
 public class TestController {
 
-    @Autowired
-    private ServiceService serviceService;
+    private final ServiceService serviceService;
+
+    public TestController(ServiceService serviceService) {
+        this.serviceService = serviceService;
+    }
 
     @GetMapping
     public List<Chips> findAll(){

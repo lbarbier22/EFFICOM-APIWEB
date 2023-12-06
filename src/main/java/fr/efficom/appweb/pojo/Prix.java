@@ -17,5 +17,5 @@ public class Prix {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private double prix;
+    private Double prix;
 }

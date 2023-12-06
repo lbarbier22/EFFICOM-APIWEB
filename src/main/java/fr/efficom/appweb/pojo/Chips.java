@@ -15,7 +15,8 @@ import javax.persistence.Id;
 public class Chips {
 
     @Id
-    private String id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
     private String nom;
 

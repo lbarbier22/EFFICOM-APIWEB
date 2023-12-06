@@ -17,5 +17,5 @@ public class Reductions {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private double reduction;
+    private Double reduction;
 }
