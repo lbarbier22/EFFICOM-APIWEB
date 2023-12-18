@@ -10,4 +10,7 @@ public interface ServiceService {
     List<Chips> findAll();
 
     Chips findById(Long id);
+
+    List<Chips> findByMarque(String marque);
+
 }

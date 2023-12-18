@@ -27,4 +27,14 @@ public class ServiceServiceImpl implements ServiceService {
     public Chips findById(Long id){
         return chipsRepository.findById(id).orElse(null);
     }
+
+    public List<Chips> findByMarque(String marque) {
+        try {
+            return chipsRepository.findByMarque(marque);
+        }
+        catch (Exception e) {
+            System.out.println(e);
+        }
+        return null;
+    }
 }

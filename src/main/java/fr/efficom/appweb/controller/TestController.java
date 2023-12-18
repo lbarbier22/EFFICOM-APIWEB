@@ -3,10 +3,7 @@ package fr.efficom.appweb.controller;
 import fr.efficom.appweb.pojo.Chips;
 import fr.efficom.appweb.service.ServiceService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -28,6 +25,12 @@ public class TestController {
     @GetMapping("/{id}")
     public Chips findById(@PathVariable("id") Long id){
         return serviceService.findById(id);
+    }
+
+    @GetMapping("/")
+    @ResponseBody
+    public List<Chips> findByMarque(@RequestParam(name = "marque")String marque) {
+        return serviceService.findByMarque(marque);
     }
 
 }
