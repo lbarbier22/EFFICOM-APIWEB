@@ -3,8 +3,8 @@ spring:
     add-properties: false
   datasource:
     url: jdbc:mariadb://mysql-superchips.alwaysdata.net/superchips_catalogue
-    username: 336651
-    password: DVy#v2a7LnK67XC
+    username: 336651_lucas
+    password: Lucas1234@
   jpa:
     database: mysql
     generate-ddl: true
