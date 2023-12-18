@@ -37,4 +37,16 @@ public class ServiceServiceImpl implements ServiceService {
         }
         return null;
     }
+
+    public Chips save(Chips chips) {
+        return chipsRepository.save(chips);
+    }
+
+    public Chips update(Chips chips) {
+        return chipsRepository.save(chips);
+    }
+
+    public void delete(Long id) {
+        chipsRepository.deleteById(id);
+    }
 }

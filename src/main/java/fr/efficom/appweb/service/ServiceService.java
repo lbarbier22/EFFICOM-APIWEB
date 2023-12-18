@@ -13,4 +13,10 @@ public interface ServiceService {
 
     List<Chips> findByMarque(String marque);
 
+    Chips save(Chips chips);
+
+    Chips update(Chips chips);
+
+    void delete(Long id);
+
 }
