@@ -27,4 +27,12 @@ public class ServiceServiceImpl implements ServiceService {
     public Chips findById(Long id){
         return chipsRepository.findById(id).orElse(null);
     }
+
+    public Chips save(Chips chips){
+        return chipsRepository.save(chips);
+    }
+
+    public void deleteById(Long id){
+        chipsRepository.deleteById(id);
+    }
 }

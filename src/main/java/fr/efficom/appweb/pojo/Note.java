@@ -14,11 +14,7 @@ public class Note {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
     private Long id;
-
-    @OneToOne(mappedBy = "note", cascade = CascadeType.ALL)
-    private Chips chips;
 
     private Integer reproductionGout;
 
