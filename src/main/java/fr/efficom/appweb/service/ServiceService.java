@@ -8,4 +8,6 @@ import java.util.List;
 @Service
 public interface ServiceService {
     List<Chips> findAll();
+
+    Chips findById(Long id);
 }

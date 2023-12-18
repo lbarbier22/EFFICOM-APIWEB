@@ -23,4 +23,8 @@ public class ServiceServiceImpl implements ServiceService {
 
         return chipsRepository.findAll();
     }
+
+    public Chips findById(Long id){
+        return chipsRepository.findById(id).orElse(null);
+    }
 }
