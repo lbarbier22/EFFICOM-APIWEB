@@ -2,11 +2,13 @@ spring:
   devtools:
     add-properties: false
   datasource:
-    url: jdbc:mariadb:mysql-superchips.alwaysdata.net
-    username: 336651
-    password: DVy#v2a7LnK67XC
+    url: jdbc:mariadb://mysql-superchips.alwaysdata.net/superchips_catalogue
+    username: 336651_lucas
+    password: Lucas1234@
   jpa:
-  generate-ddl: true
-  hibernate.ddl-auto: create-drop
+    database: mysql
+    generate-ddl: true
+    hibernate.ddl-auto: create-drop
+
 server:
   port: 8022
