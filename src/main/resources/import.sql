@@ -136,5 +136,8 @@ INSERT INTO chips(marque, nom) VALUES ('Pringles', 'Hot & Spicy');
 INSERT INTO note(addictivite, bonus, note, originalite, reproduction_gout, ressenti) VALUES ('1', '0', '8', '1', '3', '3');
 UPDATE chips SET id_note = '21',id_prix = '1',id_reduction = '10' WHERE chips.id = 21;
 
+-- Chips qui vient d'êtres ajoutées
+INSERT INTO note(addictivite, bonus, note, originalite, reproduction_gout, ressenti) VALUES ('0', '0', '0', '0', '0', '0');
+
 -----------------------------------------------------------------------------------------------
 
