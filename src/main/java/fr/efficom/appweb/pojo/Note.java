@@ -16,16 +16,16 @@ public class Note {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private Integer reproductionGout;
+    private Double reproductionGout;
 
-    private Integer originalite;
+    private Double originalite;
 
-    private Integer addictivite;
+    private Double addictivite;
 
-    private Integer ressenti;
+    private Double ressenti;
 
-    private Integer bonus;
+    private Double bonus;
 
-    private Integer note;
+    private Double note;
 
 }

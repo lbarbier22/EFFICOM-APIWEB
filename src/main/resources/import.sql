@@ -18,7 +18,7 @@ INSERT INTO reductions(id, reduction) VALUES ('9', '0.9')
 --------------------------------------------------------
 
 INSERT INTO chips(marque,nom) VALUES ('Brets','Sauce Pomme Frites');
-INSERT INTO note(addictivite,bonus,note,originalite,reproduction_gout,ressenti) VALUES ('5','1','18,25','2,75','4','5,5');
+INSERT INTO note(addictivite,bonus,note,originalite,reproduction_gout,ressenti) VALUES ('5','1','18.25','2.75','4','5.5');
 UPDATE chips SET id_note = '1' WHERE chips.id = 1;
 UPDATE chips SET id_prix = '1',id_reduction = '1' WHERE chips.id = 1;
 
