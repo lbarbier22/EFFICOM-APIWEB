@@ -8,7 +8,7 @@ spring:
   jpa:
     database: mysql
     generate-ddl: true
-    hibernate.ddl-auto: none
+    hibernate.ddl-auto: update
 
 server:
   port: 8022
