@@ -1,9 +1,7 @@
 package fr.efficom.appweb.controller;
 
 import fr.efficom.appweb.pojo.Chips;
-import fr.efficom.appweb.pojo.Note;
 import fr.efficom.appweb.service.ServiceService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -12,11 +10,11 @@ import java.util.List;
 @CrossOrigin(methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT, RequestMethod.DELETE},
 origins = "*")
 @RequestMapping("/api")
-public class TestController {
+public class ChipsController {
 
     private final ServiceService serviceService;
 
-    public TestController(ServiceService serviceService) {
+    public ChipsController(ServiceService serviceService) {
         this.serviceService = serviceService;
     }
 
@@ -40,11 +38,6 @@ public class TestController {
     @PostMapping(value = "/save/chips")
     public Chips saveChips(@RequestBody Chips chips) {
         return serviceService.saveChips(chips);
-    }
-
-    @PostMapping(value = "/save/note")
-    public Note saveNote(@RequestBody Note note) {
-        return serviceService.saveNote(note);
     }
 
     @PutMapping(value = "/update/{id}")

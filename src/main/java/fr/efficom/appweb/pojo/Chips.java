@@ -1,6 +1,5 @@
 package fr.efficom.appweb.pojo;
 
-
 import lombok.Getter;
 import lombok.Setter;
 
