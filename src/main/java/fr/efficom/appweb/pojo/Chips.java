@@ -24,4 +24,12 @@ public class Chips {
     @JoinColumn(name = "id_note", referencedColumnName = "id")
     private Note note;
 
+    @ManyToOne
+    @JoinColumn(name = "id_prix", referencedColumnName = "id")
+    private Prix prix;
+
+    @ManyToOne
+    @JoinColumn(name = "id_reduction", referencedColumnName = "id")
+    private Reductions reduction;
+
 }
